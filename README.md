@@ -13,25 +13,7 @@ It wrote the code, ran away, and now the game is unplayable.
 ## 🛠️ Setup
 
 1. Install dependencies: `pip install -r requirements.txt`
-2. Run the broken app on the default port:
-   ```bash
-   python -m streamlit run app.py
-   ```
-
-   **Or** bind to a specific port (e.g. the Live Server default `5500`):
-   ```bash
-   python -m streamlit run app.py --server.port 5500
-   ```
-
-   Streamlit will print the exact URL it listens on; if you don’t see
-   `localhost:5500`, that means it’s still running on the default `8501`.
-
-   You can also set the environment variable `STREAMLIT_SERVER_PORT`:
-   ```bash
-   export STREAMLIT_SERVER_PORT=5500
-   streamlit run app.py
-   ```
-
+2. Run the broken app: `python -m streamlit run app.py`
 
 ## 🐛 Known Bugs (Spoilers — try to find them yourself first!)
 
@@ -86,20 +68,14 @@ This is a number guessing game built with Streamlit. The player picks a difficul
 
 ## 📸 Demo
 
-![Game Screenshot](Screenshot 2026-03-04 at 10.16.33 PM.png)
+![Game Screenshot](<Screenshot 2026-03-04 at 10.16.33 PM.png>)
 
 ## 🚀 Stretch Features
 
-![Game Screenshot](Screenshot 2026-03-04 at 10.16.33 PM.png)
+### Challenge 4: Enhanced Game UI
+Features added: color-coded hints, 🔥/❄️ hot-cold proximity emojis, attempts progress bar, and a guess history summary table.
 
-
-### 📌 Port configuration
-
-The game itself doesn’t care which port it uses; Streamlit decides it when
-it starts.  The instructions above show how to override the default.  The
-source code now also displays the current port as an informational message
-when the page loads, so you can confirm that the app is running where you
-expect.  See the top of `app.py` for the implementation.
+![Enhanced UI](<Screenshot 2026-03-04 at 10.16.33 PM.png>)
 
 ## Difficulty Reference
 
